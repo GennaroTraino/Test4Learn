@@ -1,8 +1,32 @@
+/* Comandi base */
 git init               /* inizializza cartella */
 git status             /* mostra stato */
 git add nome_file      /* aggiungiamo il file in stage */
 	git add.       /* add di tutti i file non tracciati */ 
 git rm --cached n_file /* rimuove il file dallo stage */
 git commit             /* committa il file (invia al repository) e resetta */
+	git commit - m "messaggio"
 git log                /* visualizza storico dei commit */
+
+/* Configura dati git (GITHUB) */
+git config --global user.email "email github"   /* configurare email */
+git config --global user.name "Username github" /* configurare username */
+
+/* Collega a repository github (origin è un etichetta per identificare progetto remoto)*/
+git remote add origin https://github.com/GennaroTraino/Test4Learn.git /*Indirizzo rep */ 
+git remote remove origin /* per rimuoverlo */
+
+/* Controlla sia collegato */
+git remote -v
+
+/* Push a remoto GitHub */
+git push origin master
+
+/* clonare un repository (Anche se non sono l'autore) */
+git clone https://github.com/GennaroTraino/Test4Learn.git 
+
+/* Aggiornare il repository agli ultimi commit effettuati */
+git pull origin master
+
+
 
