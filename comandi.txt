@@ -1,6 +1,8 @@
 git init               /* inizializza cartella */
 git status             /* mostra stato */
-git add nome_file      /* aggiungiamo il file in stage */ 
+git add nome_file      /* aggiungiamo il file in stage */
+	git add.       /* add di tutti i file non tracciati */ 
 git rm --cached n_file /* rimuove il file dallo stage */
 git commit             /* committa il file (invia al repository) e resetta */
+git log                /* visualizza storico dei commit */
 
